@@ -171,8 +171,7 @@ Requires(post):     systemd
 Requires(preun):    systemd
 Requires(postun):   systemd
 %else
-# Initscripts > 5.60 is required for IPv6 support
-Requires(pre):      initscripts >= 5.60
+Requires(pre):      initscripts
 Requires:           initscripts
 %endif
 Provides:           routingdaemon = %{version}-%{release}
