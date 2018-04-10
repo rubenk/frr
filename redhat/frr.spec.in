@@ -108,21 +108,21 @@
 %endif
 
 %if %{with_nhrpd}
-%define         daemon_nhrpd	nhrpd
+%define    daemon_nhrpd nhrpd
 %else
-%define		daemon_nhrpd	""
+%define    daemon_nhrpd ""
 %endif
 
 %if %{with_eigrpd}
-%define         daemon_eigrpd	eigrpd
+%define    daemon_eigrpd eigrpd
 %else
-%define		daemon_eigrpd	""
+%define    daemon_eigrpd ""
 %endif
 
 %if %{with_babeld}
-%define         daemon_babeld	babeld
+%define    daemon_babeld babeld
 %else
-%define		daemon_babeld	""
+%define    daemon_babeld ""
 %endif
 
 %if %{with_watchfrr}
@@ -279,19 +279,19 @@ developing OSPF-API and frr applications.
     --disable-pbrd \
 %endif
 %if %{with_nhrpd}
-	--enable-nhrpd \
+    --enable-nhrpd \
 %else
-	--disable-nhrpd \
+    --disable-nhrpd \
 %endif
 %if %{with_eigrpd}
-	--enable-eigrpd \
+    --enable-eigrpd \
 %else
-	--disable-eigrpd \
+    --disable-eigrpd \
 %endif
 %if %{with_babeld}
-	--enable-babeld \
+    --enable-babeld \
 %else
-	--disable-babeld \
+    --disable-babeld \
 %endif
 %if %{with_pam}
     --with-libpam \
